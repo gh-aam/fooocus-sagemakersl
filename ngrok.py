@@ -102,7 +102,7 @@ def main():
         subprocess.run(cmd, shell=True, env=env)
         signal.pause()
     else:
-        print('Ngrok Authtoken is required. Get one from https://ngrok.com.')
+        print('Ngrok token is required. Get one from https://ngrok.com.')
         
 if __name__ == '__main__':
     main()
