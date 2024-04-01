@@ -93,7 +93,7 @@ def main():
     if args.token != '':
         ngrok.kill()
         srv = ngrok.connect(target_port, pyngrok_config=conf.PyngrokConfig(auth_token=args.token), bind_tls=True, domain=args.domain).public_url
-        print('Fooocus URL: ' + srv)
+        print('URL: ' + srv)
 
         signal.signal(signal.SIGINT, signal_handler)
         print('Press Ctrl+C to exit!')
