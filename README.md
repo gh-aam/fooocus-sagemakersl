@@ -1,8 +1,8 @@
 # [Fooocus](https://github.com/lllyasviel/Fooocus) on [SMSL](https://studiolab.sagemaker.aws)
 
-* Clone the repository
-* Execute "**fooocus.sh**"
+* Repository cloning
+* "**fooocus.sh**" Execution
 ```
 sh fooocus.sh
 ```
-* Answer the prompts
+* Answering prompts
