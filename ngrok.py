@@ -72,9 +72,9 @@ def main():
         if saved_data and saved_data['token']:
             args.token = saved_data['token']
         else:
-            args.token = input('Enter Ngrok Authtoken: ')
+            args.token = input('Enter Ngrok token: ')
             if args.token == '':
-                args.token = input('Enter Ngrok Authtoken: ')
+                args.token = input('Enter Ngrok token: ')
             saved_data['token'] = args.token
 
     if args.domain is None:
@@ -82,13 +82,13 @@ def main():
         if saved_data and saved_data['domain']:
             args.domain = saved_data['domain']
         else:
-            args.domain = input('Enter Ngrok Domain: ')
+            args.domain = input('Enter Ngrok domain: ')
             saved_data['domain'] = args.domain
 
     save_data(saved_data)
 
-    print(f'Ngrok Authtoken: {args.token}')
-    print(f'Ngrok Domain: {args.domain}')
+    print(f'Token: {args.token}')
+    print(f'Domain: {args.domain}')
     
     if args.token != '':
         ngrok.kill()
