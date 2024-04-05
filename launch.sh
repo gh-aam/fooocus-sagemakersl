@@ -14,5 +14,3 @@ elif [ $1 = "reset" ]
 then
     python ngrok.py --reset 
 fi
-
-conda deactivate
