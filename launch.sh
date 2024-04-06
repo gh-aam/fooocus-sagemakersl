@@ -2,11 +2,11 @@
 
 cd Fooocus
 git pull
+cd ..
 
 eval "$(conda shell.bash hook)"
 conda activate fooocus
 
-cd ..
 if [ $# -eq 0 ]
 then
     python ngrok.py 
