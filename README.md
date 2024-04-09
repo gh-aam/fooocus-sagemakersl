@@ -1,16 +1,10 @@
 # [Fooocus](https://github.com/lllyasviel/Fooocus) on [SMSL](https://studiolab.sagemaker.aws)
 
-## Fooocus
-* **Setup**
+* **Fooocus**
 ```
-sh setup.sh
-```
-* **Launch**
-```
-sh launch.sh
+sh fooocus.sh
 ```
 
-## Extra
 * **Storage**
 ```
 sh storage.sh
