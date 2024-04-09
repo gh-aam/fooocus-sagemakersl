@@ -25,10 +25,8 @@ fi
 
 cd ..
 conda activate fooocus
-if [ $# -eq 0 ]
-then
+if [ $# -eq 0 ]; then
     python ngrok.py 
-elif [ $1 = "reset" ]
-then
+elif [ $1 = "reset" ]; then
     python ngrok.py --reset 
 fi
