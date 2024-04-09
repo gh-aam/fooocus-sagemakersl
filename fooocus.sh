@@ -9,10 +9,10 @@ if [ ! -d "Fooocus" ]; then
 else
     cd Fooocus && git pull
 fi
+cd ..
 
 eval "$(conda shell.bash hook)"
 
-cd ..
 if [ ! -d "/home/studio-lab-user/.conda/envs/fooocus" ]; then
     cd Fooocus
     conda env create -f environment.yaml
