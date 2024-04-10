@@ -2,6 +2,7 @@
 
 git clone https://github.com/lllyasviel/Fooocus.git
 cd Fooocus
+
 conda env create -f environment.yaml
 eval "$(conda shell.bash hook)"
 conda activate fooocus
