@@ -8,7 +8,7 @@ def main():
             f.write(ngrok_token)
     else:
         reset_option = input("Ngrok token found! Reset? (y/N/O): ")
-        if reset_option.lower() in ['y', 'yes']:
+        if reset_option.lower() in ['y', 'Y']:
             ngrok_token = input("Enter Ngrok token: ")
             with open('ngrok_data.txt', 'w') as f:
                 f.write(ngrok_token)
