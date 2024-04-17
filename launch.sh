@@ -2,4 +2,4 @@
 
 eval "$(conda shell.bash hook)"
 conda activate fooocus
-python ngrok.py
+python launch_with_ngrok.py
