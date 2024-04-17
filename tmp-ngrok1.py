@@ -15,7 +15,6 @@ else:
         with open('ngrok_data.txt', 'r') as f:
             ngrok_token = f.read().strip()
 
-srv = ngrok.connect(7865, pyngrok_config=conf.PyngrokConfig(auth_token=ngrok_token), bind_tls=True).public_url
-print(srv)
+print(ngrok.connect(7865, pyngrok_config=conf.PyngrokConfig(auth_token=ngrok_token), bind_tls=True).public_url)
 
 os.system("python Fooocus/entry_with_update.py --always-high-vram")
